@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shiv2"
+    tools:context="com.androidprojects.sunilsharma.mysqldemo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:textColorHint="@android:color/white"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:inputType="text"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"/>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:textColorHint="@android:color/white"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:inputType="textPassword"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"/>
+
+
+
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+
+            <com.androidprojects.sunilsharma.mysqldemo.FButton
+                android:id="@+id/btnLogin"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Login"
+                android:textColor="@android:color/white"
+                app:shadowColor="@android:color/black"
+                app:buttonColor="@color/colorPrimary"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp"
+                app:cornerRadius="4dp"
+                android:onClick="onLogin"/>
+
+
+            <com.androidprojects.sunilsharma.mysqldemo.FButton
+                android:id="@+id/btnReg"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Registration"
+                android:textColor="@android:color/white"
+                app:shadowColor="@android:color/black"
+                app:buttonColor="@color/colorAccent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp"
+                app:cornerRadius="4dp"
+                android:onClick="OpenRegistration"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

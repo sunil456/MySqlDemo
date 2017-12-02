@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shiv2"
+    tools:context="com.androidprojects.sunilsharma.mysqldemo.RegistrationActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="false">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:textColorHint="@android:color/white"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:inputType="text"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"/>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtsurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Surname"
+            android:textColorHint="@android:color/white"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:inputType="text"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"/>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter age"
+            android:textColorHint="@android:color/white"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:inputType="number"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Username"
+            android:textColorHint="@android:color/white"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:inputType="text"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:textColorHint="@android:color/white"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:inputType="textPassword"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="20"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"/>
+
+
+
+    </LinearLayout>
+
+    <com.androidprojects.sunilsharma.mysqldemo.FButton
+        android:id="@+id/btnReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Registration"
+        android:textColor="@android:color/white"
+        app:shadowColor="@android:color/black"
+        app:buttonColor="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:shadowEnabled="true"
+        app:shadowHeight="5dp"
+        app:cornerRadius="4dp"
+        android:onClick="onRegistration"/>
+
+</RelativeLayout>
